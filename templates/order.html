@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+</head>
+<body>
+
+<h2>Order Details</h2>
+
+<h3>{{ food.name }}</h3>
+
+<p>Price : ₹{{ food.price }}</p>
+
+<img src="{{ food.image.url }}" width="250">
+
+<br><br>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Order Place</button>
+</form>
+
+{% if message %}
+    <h3 style="color:green;">{{ message }}</h3>
+{% endif %}
+
+</body>
+</html>

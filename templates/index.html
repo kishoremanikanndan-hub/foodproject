@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'food.css' %}">
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="image">
+                <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUPBxAQFRIVFhIXFxUYFhYYFxUVFRYYFxgVFhcYHCggHR0mGxUXITIhJistMC4uGSAzODMsNygtOisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQEDCAL/xABFEAACAQMCAwYBBwcJCQAAAAABAgADBBEFIQYSMQcTIkFRYXEUIzJCgZGhCBVSYnKCsSQzQ2NzkqKywRYXNLPCw9HS0//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC8YiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgImn4l4ltbGl3+sVgi9FHVnP6KKN2P8POVHqHa5qN7UNDgiyYeXMUNWpv0YgHkQfHPxgXnmMyiv9iuJ7oc2oagaWd+Vrhlx+7QUqJ9f7s+IKXjstWBI8vlNwCfsKEffAvSJ59ve0HX9LzQ4hoo5OQlWqmQcea1KRCvsOh39Zi2HbFrVV+WyoUKrdeRKFRjj4I2cQPRkSm9K7bijilxdYVaDbZZA22TjJpVMNj4E/CWvpGqUbmktxplVKlJujKcj3B9CPQwM2IiAiIgIiICIiAiIgIiICIiAiIgIiICInBMDmafiriClY21S6viOVFJC58TsdlQe5OBKr4o44vtSuzpfZ+SEUkVLgbFsHBbn+pTB2yN28pGuL+yqtarb19QuzWavcUaNUhWPIaucOHYkkDlxkgbkQNhwtwtda/cHVOKKjLaBiEVducKSO6pb+FAerYyTnzyReekaRQtqYo6XRSlTH1VAH2n1PuZ26dZJRpJQtFC06aqiqPJVGBMmAiIga/W9GoXdF7fVKYek4wQfI+TKeoYeREpzs0sX0rXK2lXB5krUyabkbuEzUpt93OD7j2l5yF8TaKX1bTLuiP5v5Wjn9XuuZPx5h+8IEi1zQra7pGjq9FKiEHqN191bqp9xKX0NqvD+riyuKhaxu2XlY+jHlR8eTq3hY+Y39MXyJS/5SVNe6sqg2qCpWC+vKVQn8VX74F0CczosGJpoanUohPxKjM74HAbPSczAatyVlU/Rqcw+FRRnH2oGP7nvM+AiIgIiICIiAiIgIiICIiAiIgJFu03Umt9Lu61A4fuyinzBqEJke/izJTKR7XbqtqGp2+haawCAo1Q9RzsCxZgPJKe+PVj7QJH2B6NTpaYtyijvLl6hZvPlpu1NVz6DlJ/eMnPEOjpd2721ySAwGGGMo6kMjrnzVgD9kivZ/TfTkGkax0RnNtXwRTro7Fymei1AzHwE5IO2cHE7zA6rTn5FFzylwBzF
+                    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UlahRtU8Pfq45jS8lDDx4A6AAHoCZdgXyHSfFaqqKXqkKoBJJIAAHUknygQrhngjT9IotcPgvTUtUuamOYAbnl8lHsNzt1lXcWdqFxf1Tb6Q9a3tNx82pa5rD7Dtn9EEAeZPSZnaHxVcazW/NfB9N6tBSC7LsKrA7MxOAtNT0z1O/pNvwn2IKgD8R3LsSN6NElV+D1OrfYBAh2mWtOgP5O+lWTDPzly63V3nyPdqrJTPtygjPnJf2XaK+pMmp61fXNWrZ3LpTA5RSPKFbKeEHkIYZGB+MsnTOCdOtwPkVjbAj6xpqzf3nBP4zeUqKqMUVVR6AAD7hA7BERAREQEREBERAREQEREBERAREQEREBERARE4MCreMNUvNUuKmkcJHkoUzyXd2c8o8moqR1ODuBuTtsM5l/DnDVPTbT5PodIOw8TFm5WrP0LM2CAcdB0Gw952aFWs7cmwtKiJVUszU38NR2ckmrg45gxP0hkeXlgbHXdQFvb1rmp0pUqlT+4pMCBVe1Oo9WpaaVpdzUuqZZWpipRPKy7E+EtsCRv0mg1DhTXdXcDiGoLS0yD3JZWOxyPBTA5j+0dpq+wziG2o3D09WWoLu9bKV2A5Xyx+bB65Z8nPQkAdRvfwgaPhDhS306j3Glr1wXc7vUb9Jj/oNhN7EQEREBERAREQEREBERAREQEREBERAREQEREBERAREQNTxBw3a3tPutZoJUXqM5DKfVWGGU/Ayv8AiLgb5DQq3On63e2tBFyUqHv6YHQIqlh1JAA3ySJaxkO4z4fbUa9C0uCVsqXz1wBkGs2cUqIPps7N7cvQmBUnZ7w1earXpXesVbj5NbuGSoVUKxVgxSmMjGSNyARsd8z0WJ12tslNFp2yKiKAqqoAVQOgAHQTtgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICcYnMQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERED//Z">
+            </div>
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+            <a href="{% url 'signup' %}">
+                <button class="button">Sign Up</button>
+            </a>
+        </div>
+        <div>
+
+            {% for food in foods %}
+
+            <div class="body">
+
+                <img src="{{ food.image.url }}" width="250" height="200">
+
+                <div class="price">
+                    Price: ₹{{ food.price }}
+                </div>
+
+                <a href="{% url 'order_now' food.id %}" class="btn">
+                    Order Now
+                </a>
+
+                <button class="btn">Add Now</button>
+
+            </div>
+
+            {% endfor %}
+            <div class="service-container">
+
+                <div class="service-box">
+                    <h3>Easy Ordering</h3>
+                    <p>Simple and fast ordering</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Multiple Payments</h3>
+                    <p>Secure payment options</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Live Tracking</h3>
+                    <p>Track your order live</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>24/7 Support</h3>
+                    <p>Were here to help</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+</head>
+<body>
+
+<h2>Payment Page</h2>
+
+<h3>{{ food.name }}</h3>
+
+<p>Amount : ₹{{ food.price }}</p>
+
+<a href="{% url 'home' %}">
+    <button>Pay Now</button>
+</a>
+
+<h3 style="color:green;">Payment Successful ✅</h3>
+
+</body>
+</html>
