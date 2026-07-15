@@ -8,7 +8,7 @@ def home(request):
 
 
 def signup(request):
-    return render(request, 'signUp.html')
+    return render(request, 'signup.html')
 
 
 def order_now(request, id):
